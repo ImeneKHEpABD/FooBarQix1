@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQixToolkit", "FooBarQixToolkit\FooBarQixToolkit.csproj", "{2FBC52F4-36C6-430A-AFD5-7C4BEF3D77A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FooBarQixToolkit.Tests", "FooBarQixToolkit.Tests\FooBarQixToolkit.Tests.csproj", "{59E4419D-622D-431E-B8E2-FA9ABC0803E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FBC52F4-36C6-430A-AFD5-7C4BEF3D77A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FBC52F4-36C6-430A-AFD5-7C4BEF3D77A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FBC52F4-36C6-430A-AFD5-7C4BEF3D77A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FBC52F4-36C6-430A-AFD5-7C4BEF3D77A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59E4419D-622D-431E-B8E2-FA9ABC0803E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59E4419D-622D-431E-B8E2-FA9ABC0803E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59E4419D-622D-431E-B8E2-FA9ABC0803E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59E4419D-622D-431E-B8E2-FA9ABC0803E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A50960D9-6765-4399-BF7C-E31387927803}
+	EndGlobalSection
+EndGlobal
