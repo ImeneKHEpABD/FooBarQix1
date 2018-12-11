@@ -18,15 +18,6 @@ namespace FooBarQixToolkit.Tests
     [TestFixture]
     public class FooBarQixToolkitTests
     {
-        [TestCase("1Foo", "")]
-        [TestCase("FooFoo", "")]
-        [TestCase("QixFoo", "")]
-        [TestCase("abc123", "")]
-        public void should_return_empty_string_when_input_is_not_number(string number, string expected)
-        {
-            var computed = new FooBarQix().Compute(number);
-            Assert.That(computed, Is.EqualTo(expected));
-        }
         [TestCase("1", "1")]
         [TestCase("2", "2")]
         [TestCase("8", "8")]

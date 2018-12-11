@@ -16,15 +16,32 @@ using System.Threading.Tasks;
 
 namespace FooBarQixToolkit
 {
-    public class FooBarQixLog
+    sealed class FooBarQixLog
     {
         #region Attributes
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private string strfilepath;
         private string strFileName;
         private Dictionary<string, int> DicLogLevels;
-
-        
+        private static FooBarQixLog logObj;
+        private static readonly object obj = new object();
+        public static FooBarQixLog LOGOBJ
+        {
+            get
+            {
+                if (logObj == null)
+                {
+                    lock (obj)
+                    {
+                        if (logObj == null)
+                        {
+                            logObj = new FooBarQixLog();
+                        }
+                    }
+                }
+                return logObj;
+            }
+        }
         #endregion
 
         #region Constructor
