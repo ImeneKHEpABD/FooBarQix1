@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 
 namespace FooBarQixToolkit
 {
-    public class FooBarQixOperationsManager
+    public class FooBarQixOperations
     {
         #region Attributes
         private readonly Dictionary<int, string> DicDividerRules;
@@ -31,7 +31,7 @@ namespace FooBarQixToolkit
            
         #endregion
         #region Constructor
-        public FooBarQixOperationsManager()
+        public FooBarQixOperations()
         {
             Logger = new FooBarQixLog();
             Logger.InitializeLog();
@@ -50,7 +50,7 @@ namespace FooBarQixToolkit
                 [0] = "*"
             };
         }
-        public FooBarQixOperationsManager(FooBarQixLog _Logger)
+        public FooBarQixOperations(FooBarQixLog _Logger)
         {
             bLogInitialized = false;
             Logger = _Logger;

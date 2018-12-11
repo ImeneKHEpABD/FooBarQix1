@@ -22,7 +22,7 @@ namespace FooBarQixToolkit
     public class FooBarQix
     {
         #region Attributes
-        private readonly FooBarQixOperationsManager ObjfooBarQixManager;
+        private readonly FooBarQixOperations ObjfooBarQixManager;
         public static FooBarQixLog Logger;
         #endregion
         #region Constructor
@@ -31,7 +31,7 @@ namespace FooBarQixToolkit
             Logger = new FooBarQixLog();
             Logger.InitializeLog();
             Logger.TraceLog(LogLevel.Info, "Initialize FooBarQix Toolkit");
-            ObjfooBarQixManager = new FooBarQixOperationsManager(Logger);
+            ObjfooBarQixManager = new FooBarQixOperations(Logger);
         }
         #endregion
         #region Methods

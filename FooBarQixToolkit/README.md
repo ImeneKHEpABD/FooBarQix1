@@ -37,4 +37,4 @@ We have a new business request : we must keep a trace of 0 in numbers, each 0 mu
 
 In order to successfully compile the project solution, you will require to do the following:
    - Install Visual studio community 2017 or later 
-   - Install the nugget packages NUnit.3.10.1,NUnit3TestAdapter.3.10.0 and NLog.4.5.6
+   - Install the nugget packages NUnit.3.11.0,NUnit3TestAdapter.3.11.2 and NLog.4.5.6
