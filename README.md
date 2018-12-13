@@ -5,10 +5,10 @@ You should implement a function String compute(String) which implements the foll
 
 # Step 1
 #### Rules
-* If the number is divisible by 3, write “Foo” instead of the number
-* If the number is divisible by 5, add “Bar”
-* If the number is divisible by 7, add “Qix”
-* For each digit 3, 5, 7, add “Foo”, “Bar”, “Qix” in the digits order.
+* If the number is divisible by 3, write â€œFooâ€ instead of the number
+* If the number is divisible by 5, add â€œBarâ€
+* If the number is divisible by 7, add â€œQixâ€
+* For each digit 3, 5, 7, add â€œFooâ€, â€œBarâ€, â€œQixâ€ in the digits order.
 #### Examples
 * 1  => 1
 * 2  => 2
@@ -27,7 +27,7 @@ You should implement a function String compute(String) which implements the foll
 * 51 => FooBar
 * 53 => BarFoo
 # Step 2
-We have a new business request : we must keep a trace of 0 in numbers, each 0 must be replace par char “*“.
+We have a new business request : we must keep a trace of 0 in numbers, each 0 must be replace par char â€œ*â€œ.
 
 #### Examples
 * 101   => 1*1
@@ -35,7 +35,7 @@ We have a new business request : we must keep a trace of 0 in numbers, each 0 mu
 * 105   => FooBarQix*Bar
 * 10101 => FooQix**
 
-
+# Installing
 In order to successfully compile the project solution, you will require to do the following:
    - Install Visual studio community 2017 or later 
    - Install the nugget packages NUnit.3.11.0,NUnit3TestAdapter.3.11.2 and NLog.4.5.6
