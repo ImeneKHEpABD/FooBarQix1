@@ -1,6 +1,2 @@
 language: csharp
 solution: FooBarQixToolkit.sln
-install: 
--Install-Package NLog -Version 4.5.6
--Install-Package NUnit -Version 3.11.0
--Install-Package NUnit3TestAdapter -Version 3.11.2
