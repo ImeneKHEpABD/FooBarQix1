@@ -55,11 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
+    <Compile Include="FooBarQixContains.cs" />
+    <Compile Include="FooBarQixDividers.cs" />
+    <Compile Include="FooBarQixRules.cs" />
     <Compile Include="FooBarQix.cs" />
-    <Compile Include="FooBarQixLog.cs" />
-    <Compile Include="FooBarQixLogConfig.cs" />
-    <Compile Include="FooBarQixOperationsManager.cs" />
+    <Compile Include="FooBarQixOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

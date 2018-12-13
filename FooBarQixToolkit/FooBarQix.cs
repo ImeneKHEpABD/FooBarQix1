@@ -22,33 +22,38 @@ namespace FooBarQixToolkit
     public class FooBarQix
     {
         #region Attributes
-        private readonly FooBarQixOperations ObjfooBarQixManager;
-        public static FooBarQixLog Logger;
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private FooBarQixOperations foobarqixoperations;
         #endregion
+
         #region Constructor
-        public FooBarQix()
+        public FooBarQix(FooBarQixOperations opM)
         {
-            Logger = new FooBarQixLog();
-            Logger.InitializeLog();
-            Logger.TraceLog(LogLevel.Info, "Initialize FooBarQix Toolkit");
-            ObjfooBarQixManager = new FooBarQixOperations(Logger);
+            // loggerconfigloader.InitializeLogConfigParameters(logger);
+            logger.Info("Initialize FooBarQix Toolkit");
+            foobarqixoperations = opM;
         }
         #endregion
+
         #region Methods
         /// <summary>
         /// Evaluate the string using the division and contains rules.
         /// </summary>
-        /// <param name="strNumber">The  string number to be evaluated</param>
+        /// <param name="number">The  string number to be evaluated</param>
         /// <returns>The string returned after applying the division and the container rules</returns>
-        public string Compute(string strNumber)
+        public string Compute(string number)
         {
-            return ObjfooBarQixManager.EvaluateRules(strNumber);
+            try
+            {
+                return foobarqixoperations.EvaluateRules(number);
+            }
+            catch(Exception ex)
+            {
+                logger.Error("An error occurred in the Compute method: " + ex.Message);
+                return string.Empty;
+            }
+            
         }
-        public void ReleaseFooBarQix()
-        {
-            ObjfooBarQixManager.ReleaseFooBarQixOperationsManager();
-            Logger.ReleaseLog();
-        }
-            #endregion
-        }
+        #endregion
+    }
 }
