@@ -1,3 +1,4 @@
+
 [![Build Status](https://travis-ci.org/ImeneKHEpABD/FooBarQix.svg?branch=master)](https://travis-ci.org/ImeneKHEpABD/FooBarQix)
 # FooBarQixKata
 FooBarQix
@@ -37,5 +38,8 @@ We have a new business request : we must keep a trace of 0 in numbers, each 0 mu
 
 # Installing
 In order to successfully compile the project solution, you will require to do the following:
-   - Install Visual studio community 2017 or later 
+   - Install Visual studio 2017 or later 
    - Install the nugget packages NUnit.3.11.0,NUnit3TestAdapter.3.11.2 and NLog.4.5.6
+
+# Running the tests
+The unit tests were implemented in the FooBarQixToolkit.Tests project. All the test cases methods names are described enough to be understood by a normal user.
