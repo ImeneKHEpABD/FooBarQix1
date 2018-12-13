@@ -30,9 +30,7 @@ namespace FooBarQixToolkit
         #region Constructor
         public FooBarQix(FooBarQixOperations opM)
         {
-            LogManager.LoadConfiguration("NLog.config");
             logger = NLog.LogManager.GetCurrentClassLogger();
-            // loggerconfigloader.InitializeLogConfigParameters(logger);
             logger.Info("Initialize FooBarQix Toolkit");
             foobarqixoperations = opM;
         }
