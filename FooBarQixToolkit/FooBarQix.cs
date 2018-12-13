@@ -22,13 +22,16 @@ namespace FooBarQixToolkit
     public class FooBarQix
     {
         #region Attributes
-        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
+        private static NLog.Logger logger;
         private FooBarQixOperations foobarqixoperations;
         #endregion
 
         #region Constructor
         public FooBarQix(FooBarQixOperations opM)
         {
+            LogManager.LoadConfiguration("NLog.config");
+            logger = NLog.LogManager.GetCurrentClassLogger();
             // loggerconfigloader.InitializeLogConfigParameters(logger);
             logger.Info("Initialize FooBarQix Toolkit");
             foobarqixoperations = opM;
