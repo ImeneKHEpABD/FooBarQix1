@@ -42,4 +42,4 @@ In order to successfully compile the project solution, you will require to do th
    - Install the nugget packages NUnit.3.11.0,NUnit3TestAdapter.3.11.2 and NLog.4.5.6
 
 # Running the tests
-The unit tests were implemented in the FooBarQixToolkit.Tests project. All the test cases methods names are described enough to be understood by a normal user.
+The unit tests were implemented in the FooBarQixToolkit.Tests project. All the test cases methods names are described enough to be explained to a normal user.
