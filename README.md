@@ -4,7 +4,7 @@
 FooBarQix
 You should implement a function String compute(String) which implements the following rules.
 
-# Step 1
+### Step 1
 #### Rules
 * If the number is divisible by 3, write “Foo” instead of the number
 * If the number is divisible by 5, add “Bar”
@@ -27,7 +27,7 @@ You should implement a function String compute(String) which implements the foll
 * 33 => FooFooFoo (divisible by 3, contains two 3)
 * 51 => FooBar
 * 53 => BarFoo
-# Step 2
+### Step 2
 We have a new business request : we must keep a trace of 0 in numbers, each 0 must be replace par char “*“.
 
 #### Examples
