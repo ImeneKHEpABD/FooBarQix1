@@ -6,13 +6,8 @@
  * Copyright: Copyright (c) 2018
  * @version 1.0.0
  * */
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using NUnit.Framework;
-using FooBarQixToolkit;
 
 namespace FooBarQixToolkit.Tests
 {
@@ -134,7 +129,7 @@ namespace FooBarQixToolkit.Tests
 
         [TestCase("1050", "FooBarQix*Bar*")]
         [TestCase("10101", "FooQix**")]
-        public void should_return_string_that_contains_Foo_Bar_Qix_and_asterisk_when_input_is_divisible_by_3_5_7_and_contains_0(string number, string expected)
+        public void should_return_string_that_contains_respectively_Foo_Bar_Qix_and_asterisk_when_input_is_divisible_by_3_5_or_7_and_contains_3_5_7_or_0(string number, string expected)
         {
             var computed = new FooBarQix(new FooBarQixOperations()).Compute(number);
             Assert.That(computed, Is.EqualTo(expected));

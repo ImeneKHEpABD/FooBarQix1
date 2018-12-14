@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NLog;
+
 
 namespace FooBarQixToolkit
 {
-    public class FooBarQixContains: FooBarQixRules
+    public class FooBarQixRuleContains: FooBarQixAbstractRules
     {
         #region Attributes
-        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private static Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         public Dictionary<int, string> DicContainsRules = new Dictionary<int, string>
         {
@@ -20,7 +19,7 @@ namespace FooBarQixToolkit
         };
         #endregion
         #region Constructor
-        public FooBarQixContains()
+        public FooBarQixRuleContains()
         {   
         }
         #endregion
@@ -31,7 +30,7 @@ namespace FooBarQixToolkit
         /// </summary>
         /// <param name="number">The digit to be replaced by the correspondant string from the DicContainsRules if possible</param>
         /// <returns>The string returned after applying the contains rules</returns>
-        public override string BuildStringByRule(string number)
+        public override string ApplyRule(string number)
         {
             var result = string.Empty;
             int key;

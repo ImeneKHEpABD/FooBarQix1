@@ -12,31 +12,21 @@
  * */
 using NLog;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace FooBarQixToolkit
 {
     public class FooBarQix
     {
-        #region Attributes
-
-        private static NLog.Logger logger;
+        private static Logger logger;
         private FooBarQixOperations foobarqixoperations;
-        #endregion
 
-        #region Constructor
         public FooBarQix(FooBarQixOperations opM)
         {
-            logger = NLog.LogManager.GetCurrentClassLogger();
+            logger = LogManager.GetCurrentClassLogger();
             logger.Info("Initialize FooBarQix Toolkit");
             foobarqixoperations = opM;
         }
-        #endregion
 
-        #region Methods
         /// <summary>
         /// Evaluate the string using the division and contains rules.
         /// </summary>
@@ -53,8 +43,7 @@ namespace FooBarQixToolkit
                 logger.Error("An error occurred in the Compute method: " + ex.Message);
                 return string.Empty;
             }
-            
+ 
         }
-        #endregion
     }
 }

@@ -57,9 +57,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FooBarQixContains.cs" />
-    <Compile Include="FooBarQixDividers.cs" />
-    <Compile Include="FooBarQixRules.cs" />
+    <Compile Include="FooBarQixRuleContains.cs" />
+    <Compile Include="FooBarQixRuleDividers.cs" />
+    <Compile Include="FooBarQixAbstractRules.cs" />
     <Compile Include="FooBarQix.cs" />
     <Compile Include="FooBarQixOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

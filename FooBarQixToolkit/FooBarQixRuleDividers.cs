@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NLog;
 
 namespace FooBarQixToolkit
 {
-    public class FooBarQixDividers: FooBarQixRules
+    public class FooBarQixRuleDividers: FooBarQixAbstractRules
     {
         #region Attributes
-        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public Dictionary<int, string> DicDividerRules= new Dictionary<int, string>
         {
                 [3] = "Foo",
@@ -19,7 +17,7 @@ namespace FooBarQixToolkit
         #endregion
 
         #region Constructor
-        public FooBarQixDividers()
+        public FooBarQixRuleDividers()
         {
                    
         }
@@ -31,7 +29,7 @@ namespace FooBarQixToolkit
         /// </summary>
         /// <param name="number">The number to be evaluated</param>
         /// <returns>The string returned after applying the divider rules</returns>
-        public override string BuildStringByRule(string number)
+        public override string ApplyRule(string number)
         {
             long Number = 0;
             var result = string.Empty;
