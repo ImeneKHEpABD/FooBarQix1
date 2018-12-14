@@ -35,12 +35,14 @@ We have a new business request : we must keep a trace of 0 in numbers, each 0 mu
 * 303   => FooFoo*Foo
 * 105   => FooBarQix*Bar
 * 10101 => FooQix**
+
 # Project type
 The given solution is a .Net toolkit that allows any other user to build his own application to evaluate the FooBarQix rules for a given string input.
+
 # Installing
 In order to successfully compile the project solution, you will require to do the following:
    - Install Visual studio 2017 or later 
    - Install the nugget packages NUnit.3.11.0,NUnit3TestAdapter.3.11.2 and NLog.4.5.6
 
 # Running the tests
-The unit tests were implemented in the FooBarQixToolkit.Tests project. All the test cases methods names are described enough to be explained to a normal user.
+The unit tests were implemented in the FooBarQixToolkit.Tests project. The comprehensive testing was applied and all the test cases methods names are described enough to be clear to a normal user.
