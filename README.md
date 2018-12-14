@@ -35,7 +35,8 @@ We have a new business request : we must keep a trace of 0 in numbers, each 0 mu
 * 303   => FooFoo*Foo
 * 105   => FooBarQix*Bar
 * 10101 => FooQix**
-
+# Project type
+the given solution is a .Net toolkit that allows any other user to build his own application to evaluate the FooBarQix rules for a given string input 
 # Installing
 In order to successfully compile the project solution, you will require to do the following:
    - Install Visual studio 2017 or later 
